@@ -2,9 +2,13 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.user.setStatus('dnd');
-    client.user.setActivity('www.gumines.com', { type: 'PLAYING' });
-    console.log('Development Bot Ready!');
+    bot.user.setStatus('dnd')
+    bot.user.setPresence({
+        game: {
+            name: 'www.gumines.com',
+            type: 0
+        }
+    });
 });
 
 client.on('message', message => {
