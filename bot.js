@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.user.setStatus('dnd')
-    client.user.setActivity("www.gumines.com");
+    client.user.setStatus('dnd');
+    client.user.setActivity('www.gumines.com');
     console.log('I am ready!');
 });
 
