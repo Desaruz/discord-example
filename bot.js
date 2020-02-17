@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+const prefix = '-' //prefix
+
 client.on('ready', () => {
     client.user.setStatus('dnd')
     client.user.setPresence({
@@ -13,7 +15,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('Pong');
+    	message.channel.send('Pong! ' + Math.round(client.ping) + 'ms!');
   	}
 });
 
