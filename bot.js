@@ -3,8 +3,6 @@ const client = new Discord.Client();
 
 const prefix = '!' //prefix
 
-var ping = Date.now() - message.createdTimestamp + " ms";
-
 client.on('ready', () => {
     client.user.setStatus('dnd')
     client.user.setPresence({
