@@ -15,7 +15,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('You can add @Gumine Industries#0250  to your discord server.');
+    	message.reply('Pong.');
   	}
 });
 
