@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const prefix = '!' //prefix
 
 client.on('ready', () => {
-    client.user.setStatus('dnd')
+    client.user.setStatus('ONLINE')
     client.user.setPresence({
         game: {
             name: 'www.gumines.com',
